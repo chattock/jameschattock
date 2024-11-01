@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">James Chattock</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">James Chattock</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">James Chattock</h1>
+        <p class="section__text__p2">Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/james-chattock/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/chattock'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+                <p> <br /> 2+ Years experience working with Python, R, SQL, JavaScript and GIS. <br /> 
+                <br /> My expertise combines combines data science proficiency with business acumen, with work experience in ESG reporting and a focus on Geographic data science. <br /> </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> <br /> M.Sc. Geographic Data Science - London School of Economics <br />
+                <br /> B.Sc. Chinese and Business Managament - The University of Manchester <br />
+              </p>
+            </div>
+          </div>
+          <button
+          class="btn btn-color-2" style="width: 100%; border-color: rgb(163, 163, 163);"
+          onclick="window.open('./assets/resume-example.pdf')"
+          >
+          Download CV
+          </button>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Services</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title" style="margin-bottom: 0;">Services</h2>
+            <p style="margin-bottom: 2rem;"><br />All services are £25 per hour. Total hours will be confirmed after a consultation.<br /></p>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
+                <div>
+                  <h3>Web Development</h3>
+                  <p>Creating and maintaining websites with HTML/CSS/Javascript</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
+                <div>
+                  <h3>GIS Solutions</h3>
+                  <p>Geospatial data Analysis with Qgis</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
+                <div>
+                  <h3>Data Analysis</h3>
+                  <p>leveraging Python or R in notebooks for data driven insights</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Building predictive models with scikit-learn</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
+                <div>
+                  <h3>Data Visualization</h3>
+                  <p>Creating insightful visuals with python visualisation packages</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
+                <div>
+                  <h3>Web Scraping</h3>
+                  <p>Extracting data from websites</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
+                <div>
+                  <h3>Database Management</h3>
+                  <p>PostgreSQL for Organizing and storing data </p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
+                <div>
+                  <h3>API Integration</h3>
+                  <p>Connecting software systems</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
+                <div>
+                  <h3>Big Data Processing</h3>
+                  <p>Handling large datasets with Spark SQL and TensorFlow</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
+                <div>
+                  <h3>Data Cleaning</h3>
+                  <p>Improving data quality</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
+                <div>
+                  <h3>Business Intelligence</h3>
+                  <p>Data-driven decision making</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>And more...</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Book a Free Consultation</h2>
+            <iframe src="https://app.acuityscheduling.com/schedule.php?owner=33781461" width="100%" height="500px" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">UK Trade in 1700s</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://chattock.github.io/Edmond/'"
+              >
+                Website
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/chattock/Edmond'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-5.png"
+                alt="Project 6"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title"> Word Relationship Project </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://chattock.github.io/Crisis/'"
+              >
+              Website
+              </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/chattock/Crisis'"
+              >
+              Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Global Temperatures</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.youtube.com/watch?v=zUuyePLL3rw&t=165s'"
+              >
+              Video Demo
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/Data Visualisation.pdf'"
+                download
+                >
+                Project
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/chattock/data-vis-essay/blob/main/How%20to%20use%20CIMP6%20Databass-Copy1.ipynb'"
+                >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Battle of the Skies Demo</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://chattock.github.io/climate-mapping/'"
+              >
+              Website
+              </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/chattock/climate-mapping'"
+              >
+              Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-6.png"
+                alt="Project 6"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ørsted Financial Analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/Wind Turbine.pdf'"
+                download
+                >
+                Report
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">UK Fashion ESG Report</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='assets/Fashion UK ESG Report pdf.pdf'"
+                download
+                >
+                Report
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:james.chattock@gmail.com">james.chattock@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/james-chattock/">LinkedIn</a></p>
+        </div>
+      </div>
+      <div class="calendar-container" style="display: flex; justify-content: center; align-items: center; min-height: 1rem;">
+        <a href="https://app.acuityscheduling.com/schedule.php?owner=33781461&ref=booking_button" 
+           target="_blank" 
+           class="acuity-embed-button"
+           style="font-weight: 600; transition: all 300ms ease; padding: 1rem; width: calc(8rem * 2);
+                  border-radius: 2rem; border: rgb(53, 53, 53) 0.1rem solid; background: rgb(53, 53, 53); 
+                  color: white; text-decoration: none; display: inline-block; text-align: center;">
+          Book a Free Consultation
+        </a>
+        <style>
+          .acuity-embed-button:hover {
+            background: #000000 !important;
+            cursor: pointer;
+          }
+        </style>
+        <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/33781461.css" id="acuity-button-styles" />
+        <script src="https://embed.acuityscheduling.com/embed/button/33781461.js" async></script>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 James Chattock. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

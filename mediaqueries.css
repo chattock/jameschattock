@@ -1,0 +1,138 @@
+@media screen and (max-width: 1400px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .pdf-container {
+    min-width: 440px;
+    height: auto;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+  .pdf-container {
+    max-width: 80%;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 732px){
+  #experience .details-container:nth-of-type(1) {
+    max-height: 600px;
+    max-width: none;
+    min-width: 200px;
+    overflow-y: auto; /* Makes content scrollable when it exceeds the max height */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  .pdf-container {
+    min-width: 300px;
+    height: auto;
+  }
+  .project-title {
+    margin: 1rem;
+    font-size: 1.1rem;
+  }
+  #experience .article-container:nth-of-type(1) {
+    overflow-y: scroll;
+  }
+
+  #experience .details-container:nth-of-type(1) {
+    max-width: none;
+  }
+  .details-container:nth-of-type(3) .btn {
+    width: calc(8rem * 1.8/3);
+    padding: calc(1rem * 1.8/3);
+  }
+}
