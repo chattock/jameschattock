@@ -397,7 +397,7 @@ article .icon {
   max-height: 600px;
   overflow-y: auto;
   padding-bottom: 2rem;
-  min-width: 325px
+  min-width: 250px;
 }
 
 /* PROJECTS SECTION */
