@@ -4,3 +4,12 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+function showPopup() {
+  document.getElementById('cvPopup').style.display = 'block';
+}
+
+function closePopup() {
+  document.getElementById('cvPopup').style.display = 'none';
+}
+

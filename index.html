@@ -92,7 +92,7 @@
               />
               <h3>Experience</h3>
                 <p> <br /> 2+ Years experience working with Python, R, SQL, JavaScript and GIS. <br /> 
-                <br /> My expertise combines combines data science proficiency with business acumen, with work experience in ESG reporting and a focus on Geographic data science. <br /> </p>
+                <br /> My expertise combines combines data science proficiency and business acumen, with work experience in ESG reporting and a focus on Geographic data science. <br /> </p>
             </div>
             <div class="details-container">
               <img
@@ -103,15 +103,23 @@
               <h3>Education</h3>
               <p> <br /> M.Sc. Geographic Data Science - London School of Economics <br />
                 <br /> B.Sc. Chinese and Business Managament - The University of Manchester <br />
+                <br /> IBM Data Science Certified<br />
               </p>
             </div>
           </div>
           <button
-          class="btn btn-color-2" style="width: 100%; border-color: rgb(163, 163, 163);"
-          onclick="window.open('./assets/resume-example.pdf')"
+            class="btn btn-color-2"
+            style="width: 100%; border-color: rgb(163, 163, 163);"
+            onclick="showPopup()"
           >
-          Download CV
+            View CV
           </button>
+          <div id="cvPopup" class="popup">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup()">&times;</span>
+              <img src="./assets/cv-image.png" alt="CV" />
+            </div>
+          </div>
         </div>
       </div>
       <img
@@ -148,7 +156,7 @@
                 <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
                 <div>
                   <h3>Data Analysis</h3>
-                  <p>leveraging Python or R in notebooks for data driven insights</p>
+                  <p>leveraging Python or R in Jupyter or Rmarkdown for data driven insights</p>
                 </div>
               </article>
               <article>
@@ -162,7 +170,7 @@
                 <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
                 <div>
                   <h3>Data Visualization</h3>
-                  <p>Creating insightful visuals with python visualisation packages</p>
+                  <p>Creating insightful visuals with python or R based visualisation packages</p>
                 </div>
               </article>
               <article>
@@ -198,13 +206,6 @@
                 <div>
                   <h3>Data Cleaning</h3>
                   <p>Improving data quality</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Service icon" class="icon" />
-                <div>
-                  <h3>Business Intelligence</h3>
-                  <p>Data-driven decision making</p>
                 </div>
               </article>
               <article>
@@ -402,25 +403,6 @@
           />
           <p><a href="https://www.linkedin.com/in/james-chattock/">LinkedIn</a></p>
         </div>
-      </div>
-      <div class="calendar-container" style="display: flex; justify-content: center; align-items: center; min-height: 1rem;">
-        <a href="https://app.acuityscheduling.com/schedule.php?owner=33781461&ref=booking_button" 
-           target="_blank" 
-           class="acuity-embed-button"
-           style="font-weight: 600; transition: all 300ms ease; padding: 1rem; width: calc(8rem * 2);
-                  border-radius: 2rem; border: rgb(53, 53, 53) 0.1rem solid; background: rgb(53, 53, 53); 
-                  color: white; text-decoration: none; display: inline-block; text-align: center;">
-          Book a Free Consultation
-        </a>
-        <style>
-          .acuity-embed-button:hover {
-            background: #000000 !important;
-            cursor: pointer;
-          }
-        </style>
-        <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/33781461.css" id="acuity-button-styles" />
-        <script src="https://embed.acuityscheduling.com/embed/button/33781461.js" async></script>
-      </div>
     </section>
     <footer>
       <nav>
