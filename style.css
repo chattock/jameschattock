@@ -381,15 +381,14 @@ article .icon {
 
 #experience .article-container:nth-of-type(1) {
   height: auto;
-  max-height: 425px;
-  min-width: 250px;
+  max-height: 350px;
   overflow-y: auto; /* Makes content scrollable when it exceeds the max height */
 }
 
 #experience .details-container:nth-of-type(1) {
   max-height: 600px;
   max-width: 325px;
-  min-width: 200px;
+  min-width: 250px;
   overflow-y: auto; /* Makes content scrollable when it exceeds the max height */
 }
 
@@ -500,6 +499,8 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* PDF */
 
 .popup {
   display: none;
